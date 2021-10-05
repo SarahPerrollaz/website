@@ -1,0 +1,239 @@
+/* Allgemein */
+
+* { 
+  margin: 0px;
+  cursor: none;
+}
+
+:root {
+  font-size: 100%;
+  color: black;
+}
+
+body {
+  background-color: white;
+  box-sizing: border-box;
+  margin: auto;
+  height: 100vh;
+  width: 100vw;
+} 
+
+/* Fonts */
+
+h1 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 6.3vw;
+  line-height: 1;
+  letter-spacing: 0.05rem;
+}
+
+li {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 0.9;
+  letter-spacing: 0.1rem;
+}
+
+/* h4 {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 0.9;
+}
+
+h5 {
+  font-size: 1.625rem;
+  line-height: 0.9;
+} */
+
+p {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  letter-spacing: 0.03rem;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+nav {
+  width: 50vw;
+  margin: 2rem;
+  position: absolute;
+}
+
+
+.nav-links {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: calc(50vw - 4rem);
+  text-transform: uppercase;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.left {
+  float: left;
+  height: 100vh;
+  width: 50vw;
+  z-index: -1;
+}
+
+.right {
+  float: right;
+  height: 100vh;
+  width: 50vw;
+  z-index: -1;
+}
+
+.name {
+  position: absolute;
+  margin-top: calc(50vh - 4rem);
+  margin-left: 2rem ;
+}
+
+.design {
+  position: absolute;
+  text-align: right;
+  right: 0px;
+  margin-top: 1.7rem;
+  margin-right: 2rem;
+}
+
+.photo {
+  position: absolute;
+  bottom: 0px;
+  margin-left: 2rem;
+  margin-bottom: 1.7rem;
+}
+
+.cursor {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none; 
+  transition: all 0.3s ease;
+  transition-property: background,transform;
+  transform-origin: 100% 100%;
+  z-index: 1000;
+}
+
+.link-grow {
+  width: 4rem;
+  height: 4rem;
+  transition: all 0.1s ease;
+}
+
+/* About */
+
+.nav-about {
+  width: calc(100vw - 4rem);
+  z-index: 100;
+  position: fixed;
+}
+
+.main-content {
+  width: calc(75vw - 4rem);
+  position: absolute;
+  margin-left: 2rem;
+  bottom: 0rem;
+  padding-bottom: 2rem;
+}
+
+.main-text {
+  margin-bottom: 60px;
+}
+
+.main-content a {
+  color: #DE9B3B;
+}
+
+.main-content a:hover {
+  color: #EEB3B3;
+}
+
+
+/* Tablet */
+
+@media screen and (max-width: 1024px) {
+
+  .left {
+    width: 100vw;
+    height: 50vh;
+  }
+  
+  .right {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .nav-links {
+    width: calc(100vw - 4rem);
+  }
+
+  .name {
+    bottom: calc(50vh + 1.7rem);
+  }
+
+  .design {
+    margin-top: calc(0vh + 1.7rem);
+    margin-right: 2rem;
+  }
+
+  .photo {
+    left: 0px;
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
+
+.main-content {
+  width: calc(100vw - 4rem);
+  top: 15vh;
+  padding-bottom: 2rem;
+}
+
+
+.nav-about {
+      background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: -2rem;
+}
+
+.clients {
+  padding-bottom: 2rem;
+}
+
+}
+
+/* Mobile */
+  
+@media screen and (max-width: 736px) {
+
+  h1 {
+    font-size: 10vw;
+  }
+
+
+
+}
+
+
+
+
+
+
