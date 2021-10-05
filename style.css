@@ -128,6 +128,8 @@ nav {
   transition-property: background,transform;
   transform-origin: 100% 100%;
   z-index: 1000;
+  top: -2rem;
+  left: -2rem;
 }
 
 .link-grow {
