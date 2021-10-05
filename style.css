@@ -229,6 +229,11 @@ nav {
   h1 {
     font-size: 10vw;
   }
+  
+    .cursor {
+    width: 0rem;
+    height: 0rem;
+  }
 
 
 
